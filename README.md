@@ -16,22 +16,22 @@ Your method should meet the following criteria:
 
 ## Examples
 
-**Given an array _cities_:**
+Given an array _cities_:
 
 _`cities = ["Melbourne", "Dallas", "Taipei", "Toronto", "Dallas", "Kathmandu"]`_
 
-`cities.each_count` should return:
+**`cities.each_count`** should return:
 
 _`# => {"Melbourne"=>1, "Dallas"=>2, "Taipei"=>1, "Toronto"=>1, "Kathmandu"=>1}`_
 
-`cities.each_count :length` should return:
+**`cities.each_count :length`** should return:
 
 _`# => {9=>2, 6=>3, 7=>1}`_
 
-`cities.each_count :gsub, /[aeiou]/, 'x'` should return:
+**`cities.each_count :gsub, /[aeiou]/, 'x'`** should return:
 
 _`# => {"Mxlbxxrnx"=>1, "Dxllxs"=>2, "Txxpxx"=>1, "Txrxntx"=>1, "Kxthmxndx"=>1}`_
 
-`cities.each_count {|city| city.length % 3 == 0}` should return:
+**`cities.each_count {|city| city.length % 3 == 0}`** should return:
 
 _`# => {true=>5, false=>1}`_
