@@ -14,6 +14,8 @@ Your method should meet the following criteria:
 
 * It should accept a block, call the block on each element of _self_, and return a count of each unique return value.
 
+* It should raise an exception if both arguments and a block are provided.
+
 ## Examples
 
 Given an array _cities_:

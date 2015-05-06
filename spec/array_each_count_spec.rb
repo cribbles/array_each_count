@@ -20,6 +20,9 @@
 #
 # * It should accept a block, call the block on each element of
 #   self, and return a count of each unique return value.
+#
+# * It should raise an exception if both arguments and a block
+#   are provided.
 
 require 'array_each_count'
 require 'date'
@@ -77,5 +80,9 @@ describe "Array#each_count" do
   it "performs a count with a code block" do
     cities_with_block.should == cities_with_block_result
     dates_with_block.should == dates_with_block_result
+  end
+
+  it "raises an exception if arguments are supplied with block" do
+    expect { cities.each_count(:length) {|int| int + 5} }.to raise_error
   end
 end
