@@ -16,6 +16,8 @@ Your method should meet the following criteria:
 
 ## Examples
 
+**Given an array _cities_:**
+
 _`cities = ["Melbourne", "Dallas", "Taipei", "Toronto", "Dallas", "Kathmandu"]`_
 
 `cities.each_count` should return:
