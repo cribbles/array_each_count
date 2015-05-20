@@ -37,3 +37,7 @@ _`# => {"Mxlbxxrnx"=>1, "Dxllxs"=>2, "Txxpxx"=>1, "Txrxntx"=>1, "Kxthmxndx"=>1}`
 **`cities.each_count {|city| city.length % 3 == 0}`** should return:
 
 _`# => {true=>5, false=>1}`_
+
+## More Examples
+
+Examples are provided as test cases in the /spec directory.  Your goal is to factor your solution to get all of the tests to pass.
